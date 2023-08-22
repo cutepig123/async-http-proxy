@@ -43,14 +43,14 @@
 //! }
 //! ```
 
-#[cfg(all(
-    not(feature = "runtime-tokio"),
-    not(feature = "runtime-async-std"),
-    not(doc)
-))]
-compile_error!(
-    "An async runtime have to be specified by feature: \"runtime-tokio\" \"runtime-async-std\""
-);
+// #[cfg(all(
+//     not(feature = "runtime-tokio"),
+//     not(feature = "runtime-async-std"),
+//     not(doc)
+// ))]
+// compile_error!(
+//     "An async runtime have to be specified by feature: \"runtime-tokio\" \"runtime-async-std\""
+// );
 
 mod request;
 mod response;
